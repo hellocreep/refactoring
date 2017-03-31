@@ -22,16 +22,12 @@ public class ChangeDirectional {
         Customer smith = new Customer("Smith");
         Customer john = new Customer("John");
 
-        orderOne.setCustomer(smith);
-        orderTwo.setCustomer(john);
-        orderThree.setCustomer(john);
-
         customers.add(smith);
         customers.add(john);
 
-        orders.add(orderOne);
-        orders.add(orderTwo);
-        orders.add(orderThree);
+        smith.friendOrders().add(orderOne);
+        john.friendOrders().add(orderTwo);
+        john.friendOrders().add(orderThree);
     }
 
     // I want get the order count of John

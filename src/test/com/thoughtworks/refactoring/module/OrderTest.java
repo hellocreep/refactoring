@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.number.IsCloseTo.closeTo;
-import static org.junit.Assert.assertEquals;
 
 /**
  * Created by ztang on 31/03/2017.
@@ -12,20 +11,16 @@ import static org.junit.Assert.assertEquals;
 public class OrderTest {
 
     private Order order;
+    private Customer john;
 
     @Before
     public void setUp() {
         order = new Order();
-        order.setCustomer(new Customer("John"));
-    }
-
-    @Test
-    public void getOrderOwnerName() throws Exception {
-        assertEquals(order.getOrderOwnerName(), "John");
+        john = new Customer("John");
     }
 
     @Test
     public void shouldGetCorrectDiscountedPrice() throws Exception {
-        closeTo(order.getDiscountedPrice(), 90.0);
+        closeTo(order.getDiscountedPrice(john), 90.0);
     }
 }
