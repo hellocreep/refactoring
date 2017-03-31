@@ -12,8 +12,18 @@ test('Order', (t) => {
   t.deepEqual(order.getCustomer(), {name: 'Horace'})
 })
 
-test('Customer', (t) => {
+test('Customer constructor', (t) => {
   const customer = new Customer('Horace')
 
   t.is(customer.name, 'Horace')
+})
+
+test('Customer orders', (t) => {
+  const customer = new Customer('Horace')
+  const mockOrder = {id: 'orderId'}
+  customer.addOrder(mockOrder)
+  const orders = new Set()
+  orders.add(mockOrder)
+  
+  t.deepEqual(customer.getOrders(), orders)
 })
