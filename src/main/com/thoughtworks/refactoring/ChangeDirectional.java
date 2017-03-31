@@ -13,7 +13,7 @@ public class ChangeDirectional {
     private List<Order> orders;
     private List<Customer> customers;
 
-    void ChangeDirectional() {
+    public ChangeDirectional() {
         orders = new ArrayList<>();
         customers = new ArrayList<>();
         Order orderOne = new Order();
@@ -45,6 +45,10 @@ public class ChangeDirectional {
     //    method on the controlling side to call it from the existing modifier.
 
     public int countOrderByCustomerName(String name) {
-        return 2;
+        return customers.stream()
+                .filter(x -> x.getName().equals(name))
+                .findFirst()
+                .get()
+                .friendOrders().size();
     }
 }
