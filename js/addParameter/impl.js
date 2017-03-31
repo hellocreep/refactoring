@@ -1,5 +1,5 @@
-function addParameter(name) {
-  return name
+function greet(name) {
+  return `Hello, ${name}!`
 }
 
-module.exports = addParameter
+module.exports = greet

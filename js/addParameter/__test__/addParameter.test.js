@@ -1,7 +1,7 @@
 const test = require('ava')
-const addParameter = require('../impl')
+const greet = require('../impl')
 
-test('addParameter', (t) => {
-  const message = addParameter('Foo')
-  t.is(message, 'Foo')
+test('greet', (t) => {
+  const message = greet('Horace')
+  t.is(message, 'Hello, Horace!')
 })

@@ -1,5 +1,5 @@
-const addParameter = require('./impl')
+const greet = require('./impl')
 
-const message = addParameter('Foo')
+const message = greet('Horace')
 
 console.log(message)
