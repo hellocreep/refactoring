@@ -23,4 +23,12 @@ public class Order {
     public String getOrderOwnerName() {
         return this.customer.getName();
     }
+
+    public double getDiscountedPrice() {
+        return getGrossPrice() * (1 - customer.getDiscount());
+    }
+
+    private double getGrossPrice() {
+        return 100.0;
+    }
 }

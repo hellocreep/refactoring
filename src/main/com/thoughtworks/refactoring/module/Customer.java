@@ -23,4 +23,8 @@ public class Customer {
     public Set<Order> friendOrders() {
         return orders;
     }
+
+    public double getDiscount() {
+        return 0.1;
+    }
 }
