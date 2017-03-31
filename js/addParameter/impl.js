@@ -1,5 +1,5 @@
-function greet(name) {
-  return `Hello, ${name}!`
+function greet(firstPersonName, secondPersonName) {
+  return greetFn(firstPersonName, secondPersonName)
 }
 
 function greetFn(firstPersonName, secondPersonName) {
