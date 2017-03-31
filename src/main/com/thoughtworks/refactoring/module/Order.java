@@ -13,4 +13,8 @@ public class Order {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
+
+    public String getOrderOwnerName() {
+        return this.customer.getName();
+    }
 }
