@@ -10,26 +10,37 @@ import java.util.List;
  * Created by ztang on 31/03/2017.
  */
 public class ChangeDirectional {
-    void logicCode() {
-        List<Order> orders = new ArrayList();
-        orders.add(newOrderWithCustomer("Smith"));
-        orders.add(newOrderWithCustomer("John"));
-        orders.add(newOrderWithCustomer("John"));
+    private List<Order> orders;
+    private List<Customer> customers;
 
-        // I want get the order count of John
+    void ChangeDirectional() {
+        orders = new ArrayList<>();
+        customers = new ArrayList<>();
+        Order orderOne = new Order();
+        Order orderTwo = new Order();
+        Order orderThree = new Order();
+        Customer smith = new Customer("Smith");
+        Customer john = new Customer("John");
 
-        // 1. Add a field for the back pointer.
-        // 2. Decide which class will control the association.
-        // 3. Create a helper method on the noncontrolling side of the association.
-        //    Name this method to clearly indicate its restricted use.
-        // 4. If the existing modifier is on the controlling side, modify it to update the back points.
-        // 5. If the existing modifier is on the controlled side, create a controlling
-        //    method on the controlling side to call it from the existing modifier.
+        orderOne.setCustomer(smith);
+        orderTwo.setCustomer(john);
+        orderThree.setCustomer(john);
+
+        customers.add(smith);
+        customers.add(john);
+
+        orders.add(orderOne);
+        orders.add(orderTwo);
+        orders.add(orderThree);
     }
 
-    private Order newOrderWithCustomer(String name) {
-        Order order = new Order();
-        order.setCustomer(new Customer(name));
-        return order;
-    }
+    // I want get the order count of John
+
+    // 1. Add a field for the back pointer.
+    // 2. Decide which class will control the association.
+    // 3. Create a helper method on the noncontrolling side of the association.
+    //    Name this method to clearly indicate its restricted use.
+    // 4. If the existing modifier is on the controlling side, modify it to update the back points.
+    // 5. If the existing modifier is on the controlled side, create a controlling
+    //    method on the controlling side to call it from the existing modifier.
 }
