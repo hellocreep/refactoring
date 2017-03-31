@@ -43,4 +43,8 @@ public class ChangeDirectional {
     // 4. If the existing modifier is on the controlling side, modify it to update the back points.
     // 5. If the existing modifier is on the controlled side, create a controlling
     //    method on the controlling side to call it from the existing modifier.
+
+    public int countOrderByCustomerName(String name) {
+        return 2;
+    }
 }
