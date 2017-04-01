@@ -5,6 +5,7 @@ class Order {
 
   setCustomer(customer) {
     this.customer = customer
+    customer.addOrder(this)
   }
 }
 

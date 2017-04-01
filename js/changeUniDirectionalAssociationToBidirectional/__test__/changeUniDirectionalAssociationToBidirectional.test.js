@@ -1,15 +1,18 @@
 const test = require('ava')
+const sinon = require('sinon')
 const Customer = require('../customer')
 const Order = require('../order')
 
 test('Order', (t) => {
   const order = new Order
   const mockCustomer = {
-    name: 'Horace'
+    name: 'Horace',
+    addOrder: sinon.stub()
   }
   order.setCustomer(mockCustomer)
 
-  t.deepEqual(order.getCustomer(), {name: 'Horace'})
+  t.is(order.getCustomer().name, 'Horace')
+  t.is(mockCustomer.addOrder.calledWith(order), true)
 })
 
 test('Customer constructor', (t) => {
@@ -24,6 +27,6 @@ test('Customer orders', (t) => {
   customer.addOrder(mockOrder)
   const orders = new Set()
   orders.add(mockOrder)
-  
+
   t.deepEqual(customer.getOrders(), orders)
 })
