@@ -2,7 +2,7 @@ const Customer = require('./customer')
 
 class Order {
   constructor(customerName) {
-    this._customer = new Customer(customerName)
+    this._customer = Customer.create(customerName)
   }
 
   getCustomerName() {
