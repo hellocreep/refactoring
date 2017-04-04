@@ -1,8 +1,8 @@
 let _instances = new Map
 
 class Customer {
-  static create(name) {
-    return new Customer(name)
+  static getNamed(name) {
+    return _instances.get(name)
   }
 
   static loadCustomers() {

@@ -4,6 +4,8 @@ const Order = require('../order')
 const numberOfOrdersFor = require('../index')
 
 test('numberOfOrdersFor', (t) => {
+  Customer.loadCustomers()
+
   const orderList = [
     new Order('Horace'),
     new Order('Pete'),
