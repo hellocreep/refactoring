@@ -43,7 +43,24 @@ public class Customer {
         if (this.monthDisabled > 12) return 0.0;
         if (this.isPartTime) return 0.0;
 
+        // if return value is same, we can use Ors.
+        if (this.seniority < 2 || this.monthDisabled > 12 || this.isPartTime) return 0;
+        if (isNotEligibleForDisability()) return 0;
+
+        // if have nested if, we can use Ands.
+        if (this.seniority < 2) {
+            if (this.monthDisabled > 12) {
+                return 0.1;
+            }
+        }
+
+        if (this.seniority < 2 && this.monthDisabled > 12) return 0.1;
+
         // compute the disability amount
         return 1.1;
+    }
+
+    private boolean isNotEligibleForDisability() {
+        return this.seniority < 2 || this.monthDisabled > 12 || this.isPartTime;
     }
 }
