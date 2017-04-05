@@ -1,6 +1,5 @@
 package com.thoughtworks.refactoring.module;
 
-import java.lang.ref.ReferenceQueue;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,6 +9,9 @@ import java.util.Set;
 public class Customer {
     private String name;
     private Set<Order> orders;
+    public int seniority = 3;
+    public int monthDisabled = 0;
+    public boolean isPartTime = false;
 
     public Customer(String name) {
         this.name = name;
@@ -26,5 +28,22 @@ public class Customer {
 
     public double getDiscount() {
         return 0.1;
+    }
+
+    // Consolidate Conditional Expression
+    /*
+    * 1. Check that none of the conditionals has side effects.
+    * If there are side effects, you won't be able to do this refactoring.
+    * 2. Replace the string of conditionals with a single conditional statement using logical operators.
+    * 3. Compile and test.
+    * 4. Consider using Extract Method on the condition.
+    * */
+    public double disabilityAmount() {
+        if (this.seniority < 2) return 0.0;
+        if (this.monthDisabled > 12) return 0.0;
+        if (this.isPartTime) return 0.0;
+
+        // compute the disability amount
+        return 1.1;
     }
 }
