@@ -18,15 +18,13 @@ class MenuList{
     calculateTotalPrice(isSpecailDeal) {
         let total = 0;
 
-        if (isSpecailDeal) {
-            total = this.calculateCommonPrice(total);
+        total = this.calculateCommonPrice(total);
 
+        if (isSpecailDeal) {
             total += this._price * 0.95;
 
             this.sendOne();
         } else {
-            total = this.calculateCommonPrice(total);
-
             total += this._price * 0.8;
 
             this.sendTwo();
