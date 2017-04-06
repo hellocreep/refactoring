@@ -19,21 +19,25 @@ class MenuList{
         let total = 0;
 
         if (isSpecailDeal) {
-            total += this._basePrice;
-            total -= this._discountPrice;
+            total = this.calculateCommonPrice(total);
 
             total += this._price * 0.95;
 
             this.sendOne();
         } else {
-            total += this._basePrice;
-            total -= this._discountPrice;
+            total = this.calculateCommonPrice(total);
 
             total += this._price * 0.8;
 
             this.sendTwo();
         }
 
+        return total;
+    }
+
+    calculateCommonPrice(total) {
+        total += this._basePrice;
+        total -= this._discountPrice;
         return total;
     }
 }
