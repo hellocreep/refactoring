@@ -1,5 +1,7 @@
 node_modules
 *.log
 .idea
-UserInterfaceState.xcuserstate
 yarn.lock
+.gradle
+build/
+gradle/
