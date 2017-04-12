@@ -63,4 +63,12 @@ public class Customer {
     private boolean isNotEligibleForDisability() {
         return this.seniority < 2 || this.monthDisabled > 12 || this.isPartTime;
     }
+
+    public boolean isPartTime() {
+        return isPartTime;
+    }
+
+    public void setPartTime(boolean partTime) {
+        isPartTime = partTime;
+    }
 }
