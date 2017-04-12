@@ -21,6 +21,7 @@ public class ChangeDirectional {
         Order orderThree = new Order();
         Customer smith = new Customer("Smith");
         Customer john = new Customer("John");
+        smith.isPartTime = true;
 
         customers.add(smith);
         customers.add(john);
@@ -46,5 +47,17 @@ public class ChangeDirectional {
                 .findFirst()
                 .get()
                 .friendOrders().size();
+    }
+
+    public boolean isPartTime() {
+        boolean result = false;
+
+        for (Customer customer : customers) {
+            if (customer.isPartTime) {
+                result = customer.isPartTime;
+            }
+        }
+
+        return result;
     }
 }

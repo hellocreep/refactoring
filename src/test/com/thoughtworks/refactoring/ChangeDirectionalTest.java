@@ -15,4 +15,11 @@ public class ChangeDirectionalTest {
         int count = changeDirectional.countOrderByCustomerName("John");
         assertEquals(count, 2);
     }
+
+    @Test
+    public void  isPartTime() throws Exception {
+        ChangeDirectional changeDirectional = new ChangeDirectional();
+
+        assertEquals(changeDirectional.isPartTime(), true);
+    }
 }
