@@ -10,11 +10,12 @@ class Amount {
             return this.deadAmount();
         }
 
-        if (this._isSeparated) result = this.separatedAmount();
-        else {
-            if (this._isRetired) result = this.retiredAmount();
-            else result = this.normalPayAmount();
+        if (this._isSeparated) {
+            return this.separatedAmount();
         }
+
+        if (this._isRetired) result = this.retiredAmount();
+        else result = this.normalPayAmount();
 
         return result;
     }
