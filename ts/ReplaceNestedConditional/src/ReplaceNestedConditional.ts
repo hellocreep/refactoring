@@ -6,14 +6,16 @@ class Amount {
 
     public getPayAmount(): number {
         let result: number;
-        if (this._isDead) result = this.deadAmount();
-        else {
-            if (this._isSeparated) result = this.separatedAmount();
-            else {
-                if (this._isRetired) result = this.retiredAmount();
-                else result = this.normalPayAmount();
-            }
+        if (this._isDead) {
+            return this.deadAmount();
         }
+
+        if (this._isSeparated) result = this.separatedAmount();
+        else {
+            if (this._isRetired) result = this.retiredAmount();
+            else result = this.normalPayAmount();
+        }
+
         return result;
     }
 
