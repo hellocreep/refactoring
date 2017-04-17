@@ -21,6 +21,7 @@ class Charge {
         if (!(this.lastUsage() > 0)) {
             return 0;
         }
+        //(Math.min(this.lastUsage(), 100) - 0) * 0.03
         return Math.min(this.lastUsage(), 100) * 0.03;
     }
 
@@ -28,6 +29,7 @@ class Charge {
         if (!(this.lastUsage() > 100)) {
             return 0;
         }
+         //(Math.min(this.lastUsage(), 200) - 100) * 0.05
         return (Math.min(this.lastUsage(), 200) - 100) * 0.05;
     }
 
@@ -35,6 +37,7 @@ class Charge {
         if (!(this.lastUsage() > 200)) {
             return 0;
         }
+        //(Math.min(this.lastUsage(), IntegerMax) - 200) * 0.07
         return (this.lastUsage() - 200) * 0.07;
     }
 
