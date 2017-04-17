@@ -14,8 +14,10 @@ class Amount {
             return this.separatedAmount();
         }
 
-        if (this._isRetired) result = this.retiredAmount();
-        else result = this.normalPayAmount();
+        if (this._isRetired) {
+            return this.retiredAmount();
+        }
+        result = this.normalPayAmount();
 
         return result;
     }
