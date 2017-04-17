@@ -5,7 +5,6 @@ class Amount {
     private _isRetired: boolean = false;
 
     public getPayAmount(): number {
-        let result: number;
         if (this._isDead) {
             return this.deadAmount();
         }
@@ -17,9 +16,8 @@ class Amount {
         if (this._isRetired) {
             return this.retiredAmount();
         }
-        result = this.normalPayAmount();
 
-        return result;
+        return this.normalPayAmount();
     }
 
     private deadAmount(): number {
