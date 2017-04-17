@@ -17,7 +17,7 @@ export default class PriceCharger {
         if (this.notSummer(date)) {
             return this.winterCharge(quanitity);
         } else {
-            return quanitity * this._summerRate;
+            return this.winterCharge(quanitity);
         }
     }
 
@@ -27,5 +27,9 @@ export default class PriceCharger {
 
     private winterCharge(quanitity: number): number {
         return quanitity * this._winterRate + this._winterServiceCharge;
+    }
+
+    private summerCharge(quanitity: number): number {
+        return quanitity * this._summerRate;
     }
 }
