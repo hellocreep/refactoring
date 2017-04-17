@@ -17,6 +17,14 @@ class Charge {
         return new Dollars(result);
     }
 
+    protected usageInRange(start: number, end: number): number {
+         if (!(this.lastUsage() > start)) {
+            return 0;
+        }
+
+         return Math.min(this.lastUsage(), end) - start;
+    }
+
     protected chargeLessThan100(): number {
         if (!(this.lastUsage() > 0)) {
             return 0;
