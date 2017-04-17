@@ -14,10 +14,14 @@ export default class PriceCharger {
     }
 
     public getCharge(quanitity: number, date: Moment): number {
-        if (date.isBefore(SUMMER_START) || date.isAfter(SUMMER_END)) {
+        if (this.notSummer(date)) {
             return quanitity * this._winterRate + this._winterServiceCharge;
         } else {
             return quanitity * this._summerRate;
         }
+    }
+
+    private notSummer(date: Moment): boolean {
+        return date.isBefore(SUMMER_START) || date.isAfter(SUMMER_END);
     }
 }
