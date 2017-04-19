@@ -3,14 +3,14 @@
 
 ### Composing Methods(composing methods)
 
-* [ ] Consolidate Conditional Expression
-* [ ] Decompose Conditional
+* [x] Consolidate Conditional Expression
+* [x] Decompose Conditional
 * [ ] Extract Method
 * [ ] Extract Surrounding Method
 * [ ] Extract Variable
 * [ ] Form Template Method
 * [ ] Inline Method
-* [ ] Inline Temp
+* [x] Inline Temp
 * [ ] Move Eval from Runtime to Parse Time
 * [ ] Remove Assignments to Parameters
 * [ ] Replace Loop with Collection Closure Method
@@ -26,7 +26,7 @@
 * [ ] Hide Delegate
 * [ ] Inline Class
 * [ ] Inline Module
-* [ ] Introduce Foreign Method
+* [x] Introduce Foreign Method
 * [ ] Introduce Local Extension
 * [ ] Move Field
 * [ ] Move Method
@@ -34,14 +34,14 @@
 
 ### Organizing Data(organizing data)
 
-* [ ] Change Bidirectional Association to Unidirectional
-* [ ] Change Reference to Value
-* [ ] Change Unidirectional Association to Bidirectional
-* [ ] Change Value to Reference
-* [ ] Duplicate Observed Data
+* [x] Change Bidirectional Association to Unidirectional
+* [x] Change Reference to Value
+* [x] Change Unidirectional Association to Bidirectional
+* [x] Change Value to Reference
+* [x] Duplicate Observed Data
 * [ ] Eagerly Initialized Attribute
 * [ ] Encapsulate Collection
-* [ ] Encapsulate Field
+* [x] Encapsulate Field
 * [ ] Lazily Initialized Attribute
 * [ ] Replace Array with Object
 * [ ] Replace Data Value with Object
@@ -68,18 +68,18 @@
 
 ### Making Method Calls Simpler(method calls)
 
-* [ ] Add Parameter
+* [x] Add Parameter
 * [ ] Encapsulate Downcast
 * [ ] Hide Method
 * [ ] Introduce Expression Builder
 * [ ] Introduce Gateway
 * [ ] Introduce Named Parameter
 * [ ] Introduce Parameter Object
-* [ ] Parameterize Method
+* [x] Parameterize Method
 * [ ] Preserve Whole Object
 * [ ] Remove Control Flag
 * [ ] Remove Named Parameter
-* [ ] Remove Parameter
+* [x] Remove Parameter
 * [ ] Remove Setting Method
 * [ ] Rename Method
 * [ ] Replace Constructor with Factory Method
