@@ -6,15 +6,10 @@ class Account {
     this.daysOverdrawn = daysOverdrawn;
   }
 
-  overdraftCharge(){
-
-      return this.type.overdraftCharge(this.daysOverdrawn);
-  }
-
   bankCharge(){
     let result = 4.5;
     return this.daysOverdrawn > 0
-      ? result + this.overdraftCharge()
+      ? result + this.type.overdraftCharge()
       : result;
   }
 }
