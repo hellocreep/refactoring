@@ -8,15 +8,7 @@ class Account {
 
   overdraftCharge(){
 
-    const daysOverdrawn = this.daysOverdrawn;
-    if(this.type.isPremium()){
-      let result = 10;
-      return daysOverdrawn > 7
-        ? (daysOverdrawn - 7) * 0.85 + result
-        : result;
-    }else{
-      return daysOverdrawn * 1.75;
-    }
+      return this.type.overdraftCharge(this.daysOverdrawn);
   }
 
   bankCharge(){
