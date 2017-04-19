@@ -29,7 +29,7 @@
 * [x] Introduce Foreign Method
 * [ ] Introduce Local Extension
 * [ ] Move Field
-* [ ] Move Method
+* [x] Move Method
 * [ ] Remove Middle Man
 
 ### Organizing Data(organizing data)
@@ -111,4 +111,3 @@
 * [ ] Replace Inheritance with Delegation
 * [ ] Replace Subclass with Fields
 * [ ] Replace Type Code with Subclasses
-
