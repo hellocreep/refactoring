@@ -9,7 +9,10 @@ class Person {
   }
 
   set courses(courses) {
-    this._courses = courses;
+    this.removeAllCourses();
+    _.each(courses, (course) => {
+      this.addCourse(course);
+    });
   }
 
   addCourse(course) {
