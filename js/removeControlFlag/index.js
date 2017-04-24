@@ -4,21 +4,18 @@ const notifier = {
 }
 
 function foundMiscreant(people) {
-  let found = ''
   for (let i = 0; i < people.length; i++) {
-    if (found === '') {
-      if (people[i] === 'Don') {
-        notifier.sendAlert()
-        found = 'Don'
-      }
-      if (people[i] === 'John') {
-        notifier.sendAlert()
-        found = 'John'
-      }
+    if (people[i] === 'Don') {
+      notifier.sendAlert()
+      return 'Don'
+    }
+    if (people[i] === 'John') {
+      notifier.sendAlert()
+      return 'John'
     }
   }
 
-  return found
+  return ''
 }
 
 function checkSecurity(people) {

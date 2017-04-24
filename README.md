@@ -61,7 +61,7 @@
 * [ ] Introduce Assertion
 * [ ] Introduce Null Object
 * [ ] Recompose Conditional
-* [ ] Remove Control Flag
+* [x] Remove Control Flag
 * [ ] Replace Conditional with Polymorphism
 * [ ] Replace Exception with Test
 * [ ] Replace Nested Conditional with Guard Clauses
