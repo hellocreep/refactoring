@@ -3,3 +3,4 @@
 3. compile
 4. find all the usage of this collection, and use add or remove method to replace original one.
 5. compile and test
+6. find the get function, to return a read-only version collection

@@ -4,6 +4,8 @@ class Person {
   constructor() {
     this._courses = [];
   }
+
+  // make this read only
   get courses() {
     return this._courses;
   }
