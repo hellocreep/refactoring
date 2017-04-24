@@ -3,7 +3,7 @@ const notifier = {
   sendAlert() {}
 }
 
-function checkSecurity(people) {
+function foundMiscreant(people) {
   let found = ''
   for (let i = 0; i < people.length; i++) {
     if (found === '') {
@@ -17,6 +17,12 @@ function checkSecurity(people) {
       }
     }
   }
+
+  return found
+}
+
+function checkSecurity(people) {
+  const found = foundMiscreant(people)
 
   if (found) {
     notifier.notifyAdmin(found)
