@@ -40,7 +40,7 @@
 * [x] Change Value to Reference
 * [x] Duplicate Observed Data
 * [ ] Eagerly Initialized Attribute
-* [ ] Encapsulate Collection
+* [x] Encapsulate Collection
 * [x] Encapsulate Field
 * [ ] Lazily Initialized Attribute
 * [ ] Replace Array with Object
