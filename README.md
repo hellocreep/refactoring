@@ -80,7 +80,7 @@
 * [ ] Remove Control Flag
 * [ ] Remove Named Parameter
 * [x] Remove Parameter
-* [ ] Remove Setting Method
+* [x] Remove Setting Method
 * [ ] Rename Method
 * [ ] Replace Constructor with Factory Method
 * [ ] Replace Error Code with Exception
