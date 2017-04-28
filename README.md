@@ -42,7 +42,7 @@
 * [ ] Eagerly Initialized Attribute
 * [x] Encapsulate Collection
 * [x] Encapsulate Field
-* [ ] Lazily Initialized Attribute
+* [x] Lazily Initialized Attribute
 * [ ] Replace Array with Object
 * [ ] Replace Data Value with Object
 * [ ] Replace Magic Number with Symbolic Constant
