@@ -9,10 +9,6 @@ class PizzaDelivery {
     }
 
     getRating() {
-        return this._moreThanFiveLateDeliveries() ? 2 : 1;
-    }
-
-    _moreThanFiveLateDeliveries() {
-        return this.numberOfLateDeliveries > 5;
+        return this.numberOfLateDeliveries > 5 ? 2 : 1;
     }
 }
