@@ -9,7 +9,7 @@
 * [ ] Extract Surrounding Method
 * [ ] Extract Variable
 * [ ] Form Template Method
-* [ ] Inline Method
+* [x] Inline Method
 * [x] Inline Temp
 * [ ] Move Eval from Runtime to Parse Time
 * [ ] Remove Assignments to Parameters
