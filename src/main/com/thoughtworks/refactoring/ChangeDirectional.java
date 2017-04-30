@@ -1,5 +1,6 @@
 package com.thoughtworks.refactoring;
 
+import com.sun.org.apache.xpath.internal.operations.Or;
 import com.thoughtworks.refactoring.module.Customer;
 import com.thoughtworks.refactoring.module.Order;
 
@@ -14,14 +15,14 @@ public class ChangeDirectional {
     private List<Customer> customers;
 
     public ChangeDirectional() {
-        orders = new ArrayList<>();
-        customers = new ArrayList<>();
+        orders = new ArrayList<Order>();
+        customers = new ArrayList<Customer>();
         Order orderOne = new Order();
         Order orderTwo = new Order();
         Order orderThree = new Order();
         Customer smith = new Customer("Smith");
         Customer john = new Customer("John");
-        smith.isPartTime = true;
+        smith.setPartTime(true);
 
         customers.add(smith);
         customers.add(john);
@@ -53,8 +54,8 @@ public class ChangeDirectional {
         boolean result = false;
 
         for (Customer customer : customers) {
-            if (customer.isPartTime) {
-                result = customer.isPartTime;
+            if (customer.isPartTime()) {
+                result = customer.isPartTime();
             }
         }
 

@@ -12,7 +12,7 @@ public class CustomerTest {
     @Test
     public void shouldReturnZeroForDisabilityAmountWhenIsPartTimeIsTrue() throws Exception {
         Customer john = new Customer("john");
-        john.isPartTime = true;
+        john.setPartTime(true);
 
         assertThat(john.disabilityAmount(), is(0.0));
     }
