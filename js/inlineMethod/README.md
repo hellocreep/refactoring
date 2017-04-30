@@ -13,3 +13,7 @@ So don't be shy about getting rid of methods that have outlived their use.
 * Make sure that the method is not redefined in subclasses. If the method is redefined, refrain from this technique.
 * Find all calls to the method. Replace these calls with the content of the method.
 * Delete the method.
+
+## ShortCut for Inline Method in Intellij
+
+option + command + N
