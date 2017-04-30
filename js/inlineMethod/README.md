@@ -8,6 +8,9 @@ But when there are many such methods, they become a confusing tangle that is har
 Often methods are not too short originally, but become that way as changes are made to the program.
 So don't be shy about getting rid of methods that have outlived their use.
 
+## Benefit
+By minimizing the number of unneeded methods, you make the code more straightforward.
+
 ## Mechanic
 
 * Make sure that the method is not redefined in subclasses. If the method is redefined, refrain from this technique.
