@@ -11,11 +11,11 @@ public class Customer {
     private Set<Order> orders;
     public int seniority = 3;
     public int monthDisabled = 0;
-    public boolean isPartTime = false;
+    private boolean isPartTime = false;
 
     public Customer(String name) {
         this.name = name;
-        this.orders = new HashSet<>();
+        this.orders = new HashSet<Order>();
     }
 
     public String getName() {
