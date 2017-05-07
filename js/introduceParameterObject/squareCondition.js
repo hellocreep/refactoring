@@ -16,6 +16,12 @@ class SquareCondition {
   getColorList() {
     return this._colorList;
   }
+
+  isIncludes(square) {
+    return square.getArea() >= this._miniArea
+      && square.getArea() <= this._maxArea
+      && this._colorList.includes(square.getColor())
+  }
 }
 
 module.exports = SquareCondition;
