@@ -74,7 +74,7 @@
 * [ ] Introduce Expression Builder
 * [ ] Introduce Gateway
 * [ ] Introduce Named Parameter
-* [ ] Introduce Parameter Object
+* [x] Introduce Parameter Object
 * [x] Parameterize Method
 * [ ] Preserve Whole Object
 * [ ] Remove Control Flag
