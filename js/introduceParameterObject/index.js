@@ -11,4 +11,4 @@ const squareSixth = new Square(3, 'blue');
 
 const allSquare = new AllSquare([squareFirst, squareSecond, squareThird, squareFourth, squareFifth, squareSixth]);
 
-allSquare.getSpecialSquareArea(20, ['red', 'blue'], new SquareCondition(5, undefined, []));
+allSquare.getSpecialSquareArea(['red', 'blue'], new SquareCondition(5, 20, []));
