@@ -1,5 +1,6 @@
 const Square = require('./square');
 const AllSquare = require('./allSquare');
+const SquareCondition = require('./squareCondition');
 
 const squareFirst = new Square(3, 'red');
 const squareSecond = new Square(5, 'red');
@@ -10,4 +11,4 @@ const squareSixth = new Square(3, 'blue');
 
 const allSquare = new AllSquare([squareFirst, squareSecond, squareThird, squareFourth, squareFifth, squareSixth]);
 
-allSquare.getSpecialSquareArea(5, 20, ['red', 'blue']);
+allSquare.getSpecialSquareArea(5, 20, ['red', 'blue'], new SquareCondition());
