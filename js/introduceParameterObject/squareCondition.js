@@ -5,18 +5,6 @@ class SquareCondition {
     this._colorList = colorList;
   }
 
-  getMiniArea() {
-    return this._miniArea;
-  }
-
-  getMaxArea() {
-    return this._maxArea;
-  }
-
-  getColorList() {
-    return this._colorList;
-  }
-
   isIncludes(square) {
     return square.getArea() >= this._miniArea
       && square.getArea() <= this._maxArea
