@@ -1,6 +1,6 @@
 class IsbnSearch {
-  constructor(params) {
-    this.isbn = params.isbn
+  constructor(isbn) {
+    this.isbn = isbn
   }
 }
 
