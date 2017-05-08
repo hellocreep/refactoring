@@ -1,3 +1,7 @@
 const SearchCriteria  = require('./impl')
 
-const criteria = new SearchCriteria(5, 8, '0201485672')
+const criteria = new SearchCriteria({
+  authorId: 5,
+  publisherId: 8,
+  isbn: '0201485672'
+})
