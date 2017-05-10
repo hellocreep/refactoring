@@ -73,12 +73,12 @@
 * [ ] Hide Method
 * [ ] Introduce Expression Builder
 * [ ] Introduce Gateway
-* [ ] Introduce Named Parameter
+* [x] Introduce Named Parameter
 * [x] Introduce Parameter Object
 * [x] Parameterize Method
 * [ ] Preserve Whole Object
 * [ ] Remove Control Flag
-* [ ] Remove Named Parameter
+* [x] Remove Named Parameter
 * [x] Remove Parameter
 * [x] Remove Setting Method
 * [ ] Rename Method
