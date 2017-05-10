@@ -12,6 +12,7 @@
   "devDependencies": {
     "ava": "^0.18.2",
     "git-thru": "^1.0.0",
-    "sinon": "^2.1.0"
+    "sinon": "^2.1.0",
+    "typescript": "^2.3.2"
   }
 }

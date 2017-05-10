@@ -87,7 +87,7 @@
 * [ ] Replace Exception with Test
 * [ ] Replace Parameter with Explicit Methods
 * [ ] Replace Parameter with Method
-* [ ] Separate Query from Modifier
+* [x] Separate Query from Modifier
 
 ### Dealing with Generalization(inheritance)
 
