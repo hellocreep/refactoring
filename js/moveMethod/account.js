@@ -9,7 +9,7 @@ class Account {
   bankCharge(){
     let result = 4.5;
     return this.daysOverdrawn > 0
-      ? result + this.type.overdraftCharge()
+      ? result + this.type.overdraftCharge(this.daysOverdrawn)
       : result;
   }
 }

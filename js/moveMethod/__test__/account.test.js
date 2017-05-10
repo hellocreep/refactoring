@@ -11,7 +11,7 @@ test('premium overdraw account overdraw 8 days will be charged 9.75', (t) => {
   t.is(overdrawAccount.bankCharge(),15.35);
 });
 
-test('premium overdraw account overdraw 3 days will be charged 9.75', (t) => {
+test('premium overdraw account overdraw 3 days will be charged 14.5', (t) => {
   const overdrawAccount = new Account(true, 3);
   t.is(overdrawAccount.bankCharge(),14.5);
 });
