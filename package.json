@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "git-thru": "git-thru"
+    "git-thru": "git-thru",
+    "tsc": "tsc",
+    "ava": "ava",
+    "ava:ts":"tsc && ava dist/__test__/**/*"
   },
   "author": "",
   "license": "ISC",
