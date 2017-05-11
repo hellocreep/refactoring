@@ -1,24 +1,25 @@
-function findMiscreant(persons: Array < string > ): string {
+function findMiscreant(persons: Array < string > ): void {
     let found = '';
     for (let i = 0; i < persons.length; i++) {
         if (!found) {
             if (persons[i] === 'driver') {
                 sendAlert();
-                return findPerson(persons);
+                return;
             }
             if (persons[i] === 'pm') {
                 sendAlert();
-                return findPerson(persons);
+                return;
             }
         }
     }
-    return findPerson(persons);
+    return;
 }
 
 function sendAlert(): void {}
 
 export function checkSecurity(persons: string[]): string {
-    const spy = findMiscreant(persons);
+    findMiscreant(persons);
+    const spy = findPerson(persons);
     return spy;
 }
 
