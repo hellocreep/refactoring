@@ -1,18 +1,7 @@
 function findMiscreant(persons: Array < string > ): void {
-    let found = '';
-    for (let i = 0; i < persons.length; i++) {
-        if (!found) {
-            if (persons[i] === 'driver') {
-                sendAlert();
-                return;
-            }
-            if (persons[i] === 'pm') {
-                sendAlert();
-                return;
-            }
-        }
+    if(findPerson(persons) !== ''){
+        sendAlert();
     }
-    return;
 }
 
 function sendAlert(): void {}
