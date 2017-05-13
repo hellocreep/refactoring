@@ -4,12 +4,6 @@ import java.util.Date
 
 class PreferredCustomer(lastBillDate: Date) : Customer(lastBillDate) {
 
-    fun createBill(date: Date): String {
-        val chargeAmount = chargeFor(lastBillDate, date)
-        return addBill(date, chargeAmount)
-    }
-
-
     fun addPoint(amount: Double) {
         println("add point " + amount * 10)
     }

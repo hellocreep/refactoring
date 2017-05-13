@@ -9,6 +9,11 @@ abstract class Customer(var lastBillDate: Date) {
         return DATE_FORMAT.format(date) + " $" + amount
     }
 
+    fun createBill(date: Date): String {
+        val chargeAmount = chargeFor(lastBillDate, date)
+        return addBill(date, chargeAmount)
+    }
+
     abstract fun chargeFor(lastBillDate: Date, date: Date): Double
 
     companion object {
