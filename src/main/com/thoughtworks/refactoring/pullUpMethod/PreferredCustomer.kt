@@ -1,0 +1,24 @@
+package com.thoughtworks.refactoring.pullUpMethod
+
+import java.util.Date
+
+class PreferredCustomer(lastBillDate: Date) : Customer(lastBillDate) {
+
+    fun createBill(date: Date): String {
+        val chargeAmount = chargeFor(lastBillDate, date)
+        return addBill(date, chargeAmount)
+    }
+
+
+    fun addPoint(amount: Double) {
+        println("add point " + amount * 10)
+    }
+
+    fun chargeFor(lastBillDate: Date, date: Date): Double {
+        val day = (date.time - lastBillDate.time) / (24 * 60 * 60 * 1000)
+
+        val amount = day.toDouble() * Customer.BASE_PRICE * 0.8
+        addPoint(amount)
+        return amount
+    }
+}
