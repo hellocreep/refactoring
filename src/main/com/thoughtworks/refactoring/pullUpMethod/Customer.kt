@@ -9,6 +9,8 @@ abstract class Customer(var lastBillDate: Date) {
         return DATE_FORMAT.format(date) + " $" + amount
     }
 
+    abstract fun chargeFor(lastBillDate: Date, date: Date): Double
+
     companion object {
         val DATE_FORMAT = SimpleDateFormat("yyyy-MM-dd")
         val BASE_PRICE = 100.0
