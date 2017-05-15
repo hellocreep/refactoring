@@ -101,7 +101,7 @@
 * [ ] Introduce Null Object
 * [ ] Pull Up Constructor Body
 * [ ] Pull Up Field
-* [ ] Pull Up Method
+* [x] Pull Up Method
 * [ ] Push Down Field
 * [ ] Push Down Method
 * [ ] Replace Abstract Superclass with Module
