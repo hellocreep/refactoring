@@ -4,15 +4,14 @@
 
 (defn time-test []
   (dotimes [_ 10000]
-    (my-assert '(= 2 (+ 1 1)) "1 + 1 should return 2"))
-  nil)
+    (my-assert (= 2 (+ 1 1)) "1 + 1 should return 2")))
 
 
 (deftest test-assert
   (testing "my-assert should return passed infos when test passed"
-    (is (= (my-assert '(= 2 (+ 1 1)) "1 + 1 should return 2") "1 + 1 should return 2: passed")))
+    (is (= (my-assert (= 2 (+ 1 1)) "1 + 1 should return 2") "1 + 1 should return 2: passed")))
   (testing "my-assert should return failed infos when test passed"
-    (is (= (my-assert '(= 3 (+ 1 1)) "1 + 1 should return 2") "1 + 1 should return 2: failed")))
+    (is (= (my-assert (= 3 (+ 1 1)) "1 + 1 should return 2") "1 + 1 should return 2: failed")))
   (testing "my-assert runs 10000 times time"
     (time (time-test))
     (is true)))
