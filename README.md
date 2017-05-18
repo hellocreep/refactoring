@@ -11,7 +11,7 @@
 * [ ] Form Template Method
 * [x] Inline Method
 * [x] Inline Temp
-* [ ] Move Eval from Runtime to Parse Time
+* [x] Move Eval from Runtime to Parse Time
 * [ ] Remove Assignments to Parameters
 * [ ] Replace Loop with Collection Closure Method
 * [ ] Replace Method with Method Object
