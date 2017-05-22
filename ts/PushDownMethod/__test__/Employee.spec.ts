@@ -5,9 +5,4 @@ describe('Pull Down Method', () => {
         const salesman = new Salesman();
         expect(salesman.getQuota()).toBe('some data');
     });
-
-    it('Englneer.getQuota', () => {
-        const englneer = new Englneer();
-        expect(englneer.getQuota()).toBe('some data');
-    });
 });

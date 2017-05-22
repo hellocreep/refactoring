@@ -8,7 +8,4 @@ export class Salesman extends Employee {
 }
 
 export class Englneer extends Employee {
-    public getQuota() {
-        return 'some data';
-    }
 }
