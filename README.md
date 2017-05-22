@@ -103,7 +103,7 @@
 * [ ] Pull Up Field
 * [x] Pull Up Method
 * [ ] Push Down Field
-* [ ] Push Down Method
+* [x] Push Down Method
 * [ ] Replace Abstract Superclass with Module
 * [ ] Replace Conditional with Polymorphism
 * [ ] Replace Delegation With Hierarchy
