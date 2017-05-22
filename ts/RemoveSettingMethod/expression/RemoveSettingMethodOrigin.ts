@@ -1,6 +1,7 @@
 
 namespace ExpressionOrigin {
     class Amount {
+        // tslint:disable-next-line:variable-name
         private _id: string;
 
         constructor(id: string) {
@@ -8,7 +9,7 @@ namespace ExpressionOrigin {
         }
 
         public setId(arg: string) {
-            this._id = "zz" + arg;
+            this._id = 'zz' + arg;
         }
     }
 }

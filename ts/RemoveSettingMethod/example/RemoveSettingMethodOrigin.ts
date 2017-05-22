@@ -1,5 +1,6 @@
  namespace ExampleOrigin {
    export class Amount {
+        // tslint:disable-next-line:variable-name
         private _id: string;
 
         constructor(id: string) {

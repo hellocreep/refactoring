@@ -3,8 +3,11 @@ import { Moment } from 'moment';
 import { SUMMER_END, SUMMER_START } from './Constant';
 
 export default class PriceCharger {
+    // tslint:disable-next-line:variable-name
     private _summerRate: number;
+    // tslint:disable-next-line:variable-name
     private _winterRate: number;
+    // tslint:disable-next-line:variable-name
     private _winterServiceCharge: number;
 
     constructor() {

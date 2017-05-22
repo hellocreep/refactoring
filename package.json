@@ -4,18 +4,37 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava",
+    "test:ava": "ava",
+    "test:jest": "jest",
     "git-thru": "git-thru",
-    "tsc": "tsc",
+    "tsc": "./node_modules/typescript/bin/tsc",
     "ava": "ava",
-    "ava:ts":"tsc && ava dist/__test__/**/*"
+    "ava:ts": "tsc && ava dist/__test__/**/*"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(spec))\\.(ts|tsx)$"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^19.2.3",
     "ava": "^0.18.2",
     "git-thru": "^1.0.0",
+    "jest": "^20.0.3",
     "sinon": "^2.1.0",
+    "ts-jest": "^20.0.4",
+    "tslint": "^5.2.0",
     "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "moment": "^2.18.1"
   }
 }

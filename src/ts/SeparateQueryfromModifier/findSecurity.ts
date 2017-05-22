@@ -1,9 +1,11 @@
-function findMiscreant(persons: Array < string > ): void {
-    if(findPerson(persons) !== ''){
+// tslint:disable-next-line:array-type
+function findMiscreant(persons: Array<string> ): void {
+    if (findPerson(persons) !== '') {
         sendAlert();
     }
 }
 
+// tslint:disable-next-line:no-empty
 function sendAlert(): void {}
 
 export function checkSecurity(persons: string[]): string {
@@ -12,7 +14,8 @@ export function checkSecurity(persons: string[]): string {
     return spy;
 }
 
-function findPerson(persons) : string {
+function findPerson(persons): string {
+    // tslint:disable-next-line:prefer-for-of
     for (let i = 0; i < persons.length; i++) {
         if (persons[i] === 'driver') {
             return 'driver';

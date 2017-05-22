@@ -1,7 +1,10 @@
 
 class Amount {
+    // tslint:disable-next-line:variable-name
     private _isDead: boolean = false;
+    // tslint:disable-next-line:variable-name
     private _isSeparated: boolean = false;
+    // tslint:disable-next-line:variable-name
     private _isRetired: boolean = false;
 
     public getPayAmount(): number {
