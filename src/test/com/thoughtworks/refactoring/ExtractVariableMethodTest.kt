@@ -24,4 +24,9 @@ class ExtractVariableMethodTest {
         assertThat(extractVariableMethod!!.checkOS("Mac OS", "Safari 10", 0), Matchers.`is`(false))
         assertThat(extractVariableMethod!!.checkOS("Ubuntu", "Chrome 54", 1024), Matchers.`is`(false))
     }
+
+    @Test
+    fun getOwing() {
+        assertThat(extractVariableMethod!!.getOwing(), Matchers.`is`("This is Banner\nname: Tom amount Yeah!!"))
+    }
 }
