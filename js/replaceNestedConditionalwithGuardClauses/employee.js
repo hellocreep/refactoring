@@ -18,18 +18,15 @@ class Employee {
   }
 
   getPaymentAmount() {
-    let result='';
-    if (this.isDead()) {
-      result = deadAmount()
+    let result = '';
+    if (this.isDead()) return deadAmount();
+    if (this.isSeparated()) {
+      result = separatedAmount()
     } else {
-      if (this.isSeparated()) {
-        result = separatedAmount()
+      if (this.isRetired()) {
+        result = retiredAmount()
       } else {
-        if (this.isRetired()) {
-          result = retiredAmount()
-        } else {
-          result = normalPayAmount()
-        }
+        result = normalPayAmount()
       }
     }
     return result
