@@ -64,7 +64,7 @@
 * [x] Remove Control Flag
 * [ ] Replace Conditional with Polymorphism
 * [ ] Replace Exception with Test
-* [ ] Replace Nested Conditional with Guard Clauses
+* [x] Replace Nested Conditional with Guard Clauses
 
 ### Making Method Calls Simpler(method calls)
 
