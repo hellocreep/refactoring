@@ -45,7 +45,7 @@
 * [x] Lazily Initialized Attribute
 * [ ] Replace Array with Object
 * [x] Replace Data Value with Object
-* [ ] Replace Magic Number with Symbolic Constant
+* [x] Replace Magic Number with Symbolic Constant
 * [ ] Replace Record with Data Class
 * [ ] Replace Subclass with Fields
 * [ ] Replace Type Code with Class
