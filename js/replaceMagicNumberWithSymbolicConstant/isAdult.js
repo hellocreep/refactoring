@@ -1,5 +1,6 @@
 function isAdult(age) {
-  if (age >= 18) {
+  const theBoundaryOfAdultsAndYouth = 18;
+  if (age >= theBoundaryOfAdultsAndYouth) {
     return true
   }
   return false
