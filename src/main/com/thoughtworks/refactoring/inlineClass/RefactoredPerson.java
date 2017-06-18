@@ -6,6 +6,8 @@ package com.thoughtworks.refactoring.inlineClass;
 public class RefactoredPerson {
     private String name;
     private PhoneNumber phoneNumber;
+    private String areaCode;
+    private String number;
 
 
     public RefactoredPerson(String name, PhoneNumber phoneNumber) {
@@ -30,18 +32,18 @@ public class RefactoredPerson {
     }
 
     public String getAreaCode() {
-        return phoneNumber.getAreaCode();
+        return areaCode;
     }
 
     public void setAreaCode(String areaCode) {
-        this.phoneNumber.setAreaCode(areaCode);
+        this.areaCode = areaCode;
     }
 
     public String getNumber() {
-        return phoneNumber.getNumber();
+        return number;
     }
 
     public void setNumber(String number) {
-        this.phoneNumber.setNumber(number);
+        this.number = number;
     }
 }
