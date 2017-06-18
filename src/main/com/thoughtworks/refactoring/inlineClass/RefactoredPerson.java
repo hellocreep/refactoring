@@ -46,4 +46,8 @@ public class RefactoredPerson {
     public void setNumber(String number) {
         this.number = number;
     }
+
+    public String getWholePhoneNumber() {
+        return areaCode + number;
+    }
 }
