@@ -5,14 +5,14 @@ package com.thoughtworks.refactoring.inlineClass;
  */
 public class RefactoredPerson {
     private String name;
-    private PhoneNumber phoneNumber;
     private String areaCode;
     private String number;
 
 
-    public RefactoredPerson(String name, PhoneNumber phoneNumber) {
+    public RefactoredPerson(String name, String areaCode, String number) {
         this.name = name;
-        this.phoneNumber = phoneNumber;
+        this.areaCode = areaCode;
+        this.number = number;
     }
 
     public String getName() {
@@ -21,14 +21,6 @@ public class RefactoredPerson {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public PhoneNumber getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(PhoneNumber phoneNumber) {
-        this.phoneNumber = phoneNumber;
     }
 
     public String getAreaCode() {
