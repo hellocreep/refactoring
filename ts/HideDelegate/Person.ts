@@ -10,10 +10,6 @@ export default class Person {
         return this._name;
     }
 
-    public getDepartment(): Department {
-        return this._department;
-    }
-
     public setDepartment(arg: Department): void {
         this._department = arg;
     }
