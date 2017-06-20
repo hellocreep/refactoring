@@ -11,7 +11,7 @@ describe('Hide Delegate', () => {
     });
 
     it('getManager', () => {
-        const manager = john.getDepartment().getManager();
+        const manager = john.getManager();
         expect(manager.getName()).toBe('mick');
     });
 });
