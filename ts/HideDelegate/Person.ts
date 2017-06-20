@@ -17,6 +17,10 @@ export default class Person {
     public setDepartment(arg: Department): void {
         this._department = arg;
     }
+
+    public getManager(): Person {
+        return this._department.getManager();
+    }
 }
 
 export class Department {
