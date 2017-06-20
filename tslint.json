@@ -12,7 +12,13 @@
         "trailing-comma": [false],
         "quotemark":[false],
         "comment-format": [false],
-        "max-classes-per-file":[false]
+        "max-classes-per-file":[false],
+        "variable-name": [
+            true, 
+            "ban-keywords", 
+            "check-format", 
+            "allow-leading-underscore"
+        ]
     },
     "rulesDirectory": []
 }

@@ -23,7 +23,7 @@
 
 * [ ] Extract Class
 * [ ] Extract Module
-* [ ] Hide Delegate
+* [x] Hide Delegate
 * [ ] Inline Class
 * [ ] Inline Module
 * [x] Introduce Foreign Method
