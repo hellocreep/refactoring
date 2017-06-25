@@ -1,14 +1,18 @@
 package com.thoughtworks.refactoring.replaceDataValueWithObject;
 
 public class Order {
-    public Customer customer;
+    private Customer customer;
 
 
     public Order(String customerName) {
-        this.customer = new Customer(customerName);
+       this.setCustomer(customerName);
     }
 
     public String getCustomerName() {
         return this.customer.getName();
+    }
+
+    public void setCustomer(String customerName) {
+        this.customer = new Customer(customerName);
     }
 }
