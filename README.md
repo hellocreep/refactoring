@@ -44,7 +44,7 @@
 * [x] Encapsulate Field
 * [x] Lazily Initialized Attribute
 * [ ] Replace Array with Object
-* [ ] Replace Data Value with Object
+* [x] Replace Data Value with Object
 * [ ] Replace Magic Number with Symbolic Constant
 * [ ] Replace Record with Data Class
 * [ ] Replace Subclass with Fields
