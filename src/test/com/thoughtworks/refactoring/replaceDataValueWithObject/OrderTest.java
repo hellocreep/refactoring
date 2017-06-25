@@ -9,7 +9,7 @@ public class OrderTest {
     public void getOrderOwnerName() throws Exception {
         Order order = new Order("LU");
 
-        String customerName = order.customer.getName();
+        String customerName = order.getCustomerName();
         assertEquals(customerName, "LU");
     }
 }

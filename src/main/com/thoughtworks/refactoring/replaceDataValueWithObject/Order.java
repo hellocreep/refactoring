@@ -7,4 +7,8 @@ public class Order {
     public Order(String customerName) {
         this.customer = new Customer(customerName);
     }
+
+    public String getCustomerName() {
+        return this.customer.getName();
+    }
 }
