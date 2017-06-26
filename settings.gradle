@@ -1,2 +1,3 @@
-rootProject.name = 'refactoring'
+include ':java'
+include ':kotlin'
 

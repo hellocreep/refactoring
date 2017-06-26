@@ -6,3 +6,5 @@ yarn.lock
 build/
 gradle/
 dist/
+/java/build/
+/kotlin/build/
