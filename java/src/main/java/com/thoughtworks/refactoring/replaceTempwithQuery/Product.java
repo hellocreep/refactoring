@@ -24,7 +24,10 @@ public class Product {
     }
 
     public double calcSellingPrice() {
-        int rate = this.purchasePrice <= 100 ? 3 : 2;
-        return this.purchasePrice * rate;
+        return this.purchasePrice * calcSellingRate();
+    }
+
+    private int calcSellingRate() {
+        return this.purchasePrice <= 100 ? 3 : 2;
     }
 }
