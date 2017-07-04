@@ -27,7 +27,7 @@
 * [x] Inline Class
 * [ ] Inline Module
 * [x] Introduce Foreign Method
-* [ ] Introduce Local Extension
+* [x] Introduce Local Extension
 * [ ] Move Field
 * [x] Move Method
 * [ ] Remove Middle Man

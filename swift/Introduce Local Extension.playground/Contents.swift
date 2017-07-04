@@ -11,6 +11,7 @@
 import Foundation
 
 // Local Extension by subclass
+/*
 class MyDate: NSDate {
     var tomorrow: NSDate {
         return NSDate(timeInterval: 60 * 60 * 24, since: self as Date)
@@ -23,24 +24,22 @@ class MyDate: NSDate {
     var startOfDay: NSDate {
         return NSCalendar.current.startOfDay(for: self as Date) as NSDate
     }
-    
-    var endOfDay: NSDate? {
-        var components = DateComponents()
-        components.day = 1
-        components.second = -1
-        return NSCalendar.current.date(byAdding: components, to: self as Date) as NSDate?
-    }
 }
+ */
 
-let today = MyDate()
-let tomorrow = today.tomorrow
-let yesterday = today.yesterday
-let startOfToday = today.startOfDay
-let endOfToday = today.endOfDay
+extension NSDate {
+    var tomorrow: NSDate {
+        return NSDate(timeInterval: 60 * 60 * 24, since: self as Date)
+    }
+    
+    /*
+     ...
+    */
+}
 
 //Wrapper
 struct DateWrapper {
-    private let date: Date
+    let date: Date
     var tomorrow: Date {
         return Date(timeInterval: 60 * 60 * 24, since: date)
     }
@@ -51,11 +50,10 @@ struct DateWrapper {
     var startOfDay: Date {
         return Calendar.current.startOfDay(for: date)
     }
-    
-    var endOfDay: Date? {
-        var components = DateComponents()
-        components.day = 1
-        components.second = -1
-        return Calendar.current.date(byAdding: components, to: date)
-    }
 }
+
+let today = DateWrapper(date: Date())
+
+let tomorrow = today.tomorrow
+let yesterday = today.yesterday
+let startOfToday = today.startOfDay
