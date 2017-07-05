@@ -11,7 +11,7 @@ public class SubstituteAlgorithmTest {
     @Test
     public void foundDonFromPeopleList() throws Exception {
         String[] peoples = {"Jam", "Don"};
-        String person = new SubstituteAlgorithm().foundPerson(peoples);
+        String person = new SubstituteAlgorithm().newFoundPerson(peoples);
 
         assertEquals("Can't found the correct person", "Don", person);
     }
@@ -19,7 +19,7 @@ public class SubstituteAlgorithmTest {
     @Test
     public void foundKentFromPeopleList() throws Exception {
         String[] peoples = {"Kent", "Don"};
-        String person = new SubstituteAlgorithm().foundPerson(peoples);
+        String person = new SubstituteAlgorithm().newFoundPerson(peoples);
 
         assertEquals("Can't found the correct person", "Kent", person);
     }
