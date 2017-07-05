@@ -17,7 +17,7 @@
 * [ ] Replace Method with Method Object
 * [ ] Replace Temp with Query
 * [ ] Split Temporary Variable
-* [ ] Substitute Algorithm
+* [x] Substitute Algorithm
 
 ### Moving Features Between Objects(moving features)
 
