@@ -23,21 +23,6 @@ import java.util.List;
  */
 public class SubstituteAlgorithm {
     String foundPerson(String[] peoples) {
-        for (int i = 0; i < peoples.length; i++) {
-            if (peoples[i].equals("Don")) {
-                return "Don";
-            }
-            if (peoples[i].equals("John")) {
-                return "John";
-            }
-            if (peoples[i].equals("Kent")) {
-                return "Kent";
-            }
-        }
-        return "";
-    }
-
-    String newFoundPerson(String[] peoples) {
         List candidates = Arrays.asList("Don", "John", "Kent");
         for (String people : peoples) {
             if (candidates.contains(people)) {
