@@ -8,8 +8,8 @@ import static org.hamcrest.Matchers.is;
 public class AccountTest {
     @Test
     public void interestForAmountAndDays() throws Exception {
-        AccountType type = new AccountType();
         double interestRate = 1.2;
+        AccountType type = new AccountType(interestRate);
         Account account = new Account(type, interestRate);
 
         double result = account.interestForAmountAndDays(100, 365);
