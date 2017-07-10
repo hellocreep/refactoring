@@ -6,11 +6,11 @@ public class Account {
     private double interestRate;
 
     public double getInterestRate() {
-        return interestRate;
+        return type.getInterestRate();
     }
 
     public void setInterestRate(double interestRate) {
-        this.interestRate = interestRate;
+        this.type.setInterestRate(interestRate);
     }
 
     public Account(AccountType type, double interestRate) {
