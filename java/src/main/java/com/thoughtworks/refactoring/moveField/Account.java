@@ -2,7 +2,16 @@ package com.thoughtworks.refactoring.moveField;
 
 public class Account {
     private AccountType type;
+
     private double interestRate;
+
+    public double getInterestRate() {
+        return interestRate;
+    }
+
+    public void setInterestRate(double interestRate) {
+        this.interestRate = interestRate;
+    }
 
     public Account(AccountType type, double interestRate) {
         this.interestRate = interestRate;
@@ -10,6 +19,6 @@ public class Account {
     }
 
     double interestForAmountAndDays(double amount, int days) {
-        return interestRate * amount * days / 365;
+        return getInterestRate() * amount * days / 365;
     }
 }
