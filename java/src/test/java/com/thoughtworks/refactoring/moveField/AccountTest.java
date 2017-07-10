@@ -10,7 +10,7 @@ public class AccountTest {
     public void interestForAmountAndDays() throws Exception {
         double interestRate = 1.2;
         AccountType type = new AccountType(interestRate);
-        Account account = new Account(type, interestRate);
+        Account account = new Account(type);
 
         double result = account.interestForAmountAndDays(100, 365);
 
