@@ -1,20 +1,22 @@
+import Telephone from './telephone';
+
 class Person {
   private name: string;
-  private officeNumber: string;
   private officeAreaCode: string;
+  private telephone: Telephone;
 
   constructor(name: string, officeNumber?: string, officeAreaCode?: string) {
     this.name = name;
-    this.officeNumber = officeNumber;
     this.officeAreaCode = officeAreaCode;
+    this.telephone = new Telephone(officeNumber);
   }
 
   public setOfficeNumber(number: string): void {
-    this.officeNumber = number;
+    this.telephone.setPhoneNumber(number);
   }
 
   public getOfficeNumber(): string {
-    return this.officeNumber;
+    return this.telephone.getPhoneNumber();
   }
 
   public setOfficeAreaCode(code: string): void {
