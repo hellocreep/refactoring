@@ -2,13 +2,11 @@ import Telephone from './telephone';
 
 class Person {
   private name: string;
-  private officeAreaCode: string;
   private telephone: Telephone;
 
   constructor(name: string, officeNumber?: string, officeAreaCode?: string) {
     this.name = name;
-    this.officeAreaCode = officeAreaCode;
-    this.telephone = new Telephone(officeNumber);
+    this.telephone = new Telephone(officeNumber, officeAreaCode);
   }
 
   public setOfficeNumber(number: string): void {
@@ -20,11 +18,11 @@ class Person {
   }
 
   public setOfficeAreaCode(code: string): void {
-    this.officeAreaCode = code;
+    this.telephone.setAreaCode(code);
   }
 
   public getOfficeAreaCode(): string {
-    return this.officeAreaCode;
+    return this.telephone.getAreaCode();
   }
 }
 

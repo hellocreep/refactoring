@@ -15,6 +15,14 @@ class TelePhone {
     return this.phoneNumber;
   }
 
+  public setAreaCode(code): void {
+    this.areaCode = code;
+  }
+
+  public getAreaCode(): string {
+    return this.areaCode;
+  }
+
 }
 
 export default TelePhone;
