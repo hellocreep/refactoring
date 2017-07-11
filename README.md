@@ -21,7 +21,7 @@
 
 ### Moving Features Between Objects(moving features)
 
-* [ ] Extract Class
+* [x] Extract Class
 * [ ] Extract Module
 * [x] Hide Delegate
 * [x] Inline Class
