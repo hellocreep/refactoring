@@ -1,7 +1,7 @@
 package com.thoughtworks.refactoring.extractInterface
 
-class Employee(private val rate: Int, private val hasSpecialSkill: Boolean) {
-    fun getRate(): Int = rate
+class Employee(private val rate: Int, private val hasSpecialSkill: Boolean): Billable {
+    override fun getRate(): Int = rate
 
-    fun hasSpecialSkill(): Boolean = hasSpecialSkill
+    override fun hasSpecialSkill(): Boolean = hasSpecialSkill
 }
