@@ -1,3 +1,6 @@
 package com.thoughtworks.refactoring.extractInterface
 
-interface Billable
+interface Billable {
+    fun getRate(): Int
+    fun hasSpecialSkill(): Boolean
+}
