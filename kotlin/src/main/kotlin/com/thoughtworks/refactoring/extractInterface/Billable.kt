@@ -1,0 +1,3 @@
+package com.thoughtworks.refactoring.extractInterface
+
+interface Billable
