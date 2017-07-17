@@ -93,7 +93,7 @@
 
 * [ ] Collapse Hierarchy
 * [ ] Encapsulate Downcast
-* [ ] Extract Interface
+* [x] Extract Interface
 * [ ] Extract Module
 * [ ] Extract Subclass
 * [ ] Extract Superclass
