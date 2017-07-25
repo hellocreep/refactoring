@@ -14,8 +14,8 @@ export default class Person {
         this._department = arg;
     }
 
-    public getManager(): Person {
-        return this._department.getManager();
+    public getDepartment(): Department {
+        return this._department;
     }
 }
 
@@ -23,7 +23,7 @@ export class Department {
     private _chargeCode: string;
     private _manager: Person;
 
-    constructor(manager: Person​​) {
+    constructor(manager: Person) {
         this._manager = manager;
     }
     public getManager(): Person {
