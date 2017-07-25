@@ -30,7 +30,7 @@
 * [x] Introduce Local Extension
 * [x] Move Field
 * [x] Move Method
-* [ ] Remove Middle Man
+* [x] Remove Middle Man
 
 ### Organizing Data(organizing data)
 
