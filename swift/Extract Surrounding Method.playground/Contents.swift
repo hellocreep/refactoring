@@ -14,15 +14,11 @@ protocol Determine {
 
 
 func quxOne(hey: Int, hi: Int) -> Int {
-    let a = determineA(hey: hey, hi: hi)
-    let b = determineB(a: a)
-    return a + b
+    return newQue(hey: hey, hi: hi, callback: determineB)
 }
 
 func quxTwo(hey: Int, hi: Int) -> Int {
-    let a = determineA(hey: hey, hi: hi)
-    let c = determineC(a: a)
-    return a + c
+    return newQue(hey: hey, hi: hi, callback: determineC)
 }
 
 func determineA(hey: Int, hi: Int) -> Int {
