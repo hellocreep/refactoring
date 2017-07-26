@@ -38,5 +38,10 @@ func determineC(a: Int) -> Int {
     return a * 10 * 20
 }
 
+func newQue(hey: Int, hi: Int, callback: (Int) -> Int) -> Int {
+    let x = determineA(hey: hey, hi: hi)
+    return x + callback(x)
+}
+
 quxOne(hey: 2, hi: 3)
 quxTwo(hey: 2, hi: 3)
