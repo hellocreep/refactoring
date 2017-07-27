@@ -6,7 +6,7 @@
 * [x] Consolidate Conditional Expression
 * [x] Decompose Conditional
 * [x] Extract Method
-* [ ] Extract Surrounding Method
+* [x] Extract Surrounding Method
 * [x] Extract Variable
 * [ ] Form Template Method
 * [x] Inline Method
