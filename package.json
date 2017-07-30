@@ -35,6 +35,7 @@
     "typescript": "^2.4.1"
   },
   "dependencies": {
+    "kotlin": "^1.1.3-2",
     "moment": "^2.18.1"
   }
 }

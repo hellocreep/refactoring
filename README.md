@@ -15,6 +15,7 @@
 * [ ] Remove Assignments to Parameters
 * [ ] Replace Loop with Collection Closure Method
 * [ ] Replace Method with Method Object
+* [x] Replace Temp with Chain
 * [ ] Replace Temp with Query
 * [ ] Split Temporary Variable
 * [x] Substitute Algorithm
