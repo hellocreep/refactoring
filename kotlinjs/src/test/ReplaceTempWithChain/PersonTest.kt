@@ -1,8 +1,3 @@
 fun main(args: Array<String>) {
-    val person: Person = Person()
-    person.setName("Mu Mu")
-    person.setSex("F")
-    person.setAge(16)
-
-    print(person)
+    print(Person().setName("Mu Mu").setSex("F").setAge(16))
 }
