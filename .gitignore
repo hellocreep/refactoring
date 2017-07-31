@@ -8,3 +8,5 @@ gradle/
 dist/
 /java/build/
 /kotlin/build/
+.cache
+__pycache__
