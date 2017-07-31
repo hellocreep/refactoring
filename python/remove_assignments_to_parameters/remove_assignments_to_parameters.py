@@ -1,11 +1,12 @@
 def discount(input_val, quantity, year_to_date):
+    result = input_val
     if input_val > 50:
-        input_val -= 2
+        result -= 2
     if quantity > 100:
-        input_val -= 1
+        result -= 1
     if year_to_date > 10000:
-        input_val -= 4
-    return input_val
+        result -= 4
+    return result
 
 
 """
@@ -25,6 +26,16 @@ class Evaluation:
 
 
 class Evaluation2:
+    def __init__(self, d):
+        self.reassign(d)
+        print(d)
+
+    def reassign(self, d):
+        d = {"value": "key"}
+        print(d)
+
+
+class Evaluation3:
     def __init__(self, lst=[], lst2=[]):
         self.update(lst)
         print(lst)
@@ -33,9 +44,9 @@ class Evaluation2:
         print(lst2)
 
     def update(self, lst):
-        lst.append("Division")
+        lst.append("third")
         print(lst)
 
     def replace(self, lst):
-        lst = ["Joy", "Side"]
+        lst = ["second", "first"]
         print(lst)
