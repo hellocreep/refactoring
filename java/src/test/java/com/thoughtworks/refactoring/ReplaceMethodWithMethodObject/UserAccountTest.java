@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -20,5 +21,11 @@ public class UserAccountTest {
     @Test
     public void shouldInitUserAccout() {
         assertThat(userAccount, instanceOf(UserAccount.class));
+    }
+
+    @Test
+    public void gammaFunctionShouldRunCorrectly() {
+        int actualOut = userAccount.Gamma(1,2,3);
+        assertThat(actualOut, is(697));
     }
 }
