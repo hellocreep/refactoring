@@ -20,11 +20,31 @@ public class Gamma {
     }
 
     public int compute() {
-        tempValue1 = (inputValue * quantity) + userAccount.Delta;
-        tempValue2 = (inputValue * yearToDate) + 100;
+        tempValue1 = getTempValue1();
+        tempValue2 = getTempValue2();
+        tempValue3 = getTempValue3();
+        doSomething();
+        return finalCompute();
+    }
+
+    private int finalCompute() {
+        return tempValue3 - 2 * tempValue1;
+    }
+
+    private void doSomething() {
         if (yearToDate - tempValue1 > 100)
             tempValue2 -= 20;
-        tempValue3 = tempValue2 * 7;
-        return tempValue3 - 2 * tempValue1;
+    }
+
+    private int getTempValue3() {
+        return tempValue2 * 7;
+    }
+
+    private int getTempValue2() {
+        return (inputValue * yearToDate) + 100;
+    }
+
+    private int getTempValue1() {
+        return (inputValue * quantity) + userAccount.Delta;
     }
 }
