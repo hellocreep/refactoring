@@ -14,7 +14,7 @@
 * [x] Move Eval from Runtime to Parse Time
 * [x] Remove Assignments to Parameters
 * [ ] Replace Loop with Collection Closure Method
-* [ ] Replace Method with Method Object
+* [x] Replace Method with Method Object
 * [x] Replace Temp with Chain
 * [ ] Replace Temp with Query
 * [ ] Split Temporary Variable
@@ -101,7 +101,7 @@
 * [ ] Form Template Method
 * [ ] Introduce Null Object
 * [ ] Pull Up Constructor Body
-* [ ] Pull Up Field
+* [x] Pull Up Field
 * [x] Pull Up Method
 * [ ] Push Down Field
 * [x] Push Down Method
