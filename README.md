@@ -12,7 +12,7 @@
 * [x] Inline Method
 * [x] Inline Temp
 * [x] Move Eval from Runtime to Parse Time
-* [ ] Remove Assignments to Parameters
+* [x] Remove Assignments to Parameters
 * [ ] Replace Loop with Collection Closure Method
 * [ ] Replace Method with Method Object
 * [x] Replace Temp with Chain
