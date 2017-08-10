@@ -101,7 +101,7 @@
 * [ ] Form Template Method
 * [ ] Introduce Null Object
 * [ ] Pull Up Constructor Body
-* [ ] Pull Up Field
+* [x] Pull Up Field
 * [x] Pull Up Method
 * [ ] Push Down Field
 * [x] Push Down Method
