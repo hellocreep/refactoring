@@ -16,7 +16,7 @@
 * [ ] Replace Loop with Collection Closure Method
 * [x] Replace Method with Method Object
 * [x] Replace Temp with Chain
-* [ ] Replace Temp with Query
+* [x] Replace Temp with Query
 * [ ] Split Temporary Variable
 * [x] Substitute Algorithm
 
@@ -58,7 +58,7 @@
 
 * [ ] Consolidate Conditional Expression
 * [ ] Consolidate Duplicate Conditional Fragments
-* [ ] Decompose Conditional
+* [x] Decompose Conditional
 * [ ] Introduce Assertion
 * [ ] Introduce Null Object
 * [ ] Recompose Conditional
