@@ -19,10 +19,22 @@ function Shop:__tostring()
         self.winterRate, self.winterServiceCharge, self.summerRate)
 end
 
+function Shop:isNotSummer(date)
+    return date < SUMMER_START or date > SUMMER_END;
+end
+
+function Shop:winterCharge(quantity)
+    return quantity * self.winterRate + self.winterServiceCharge;
+end
+
+function Shop:summerCharge(quantity)
+    return quantity * self.summerRate;
+end
+
 function Shop:getCharge(date, quantity)
-    if date < SUMMER_START or date > SUMMER_END then
-        return quantity * self.winterRate + self.winterServiceCharge
+    if self:isNotSummer(date) then
+        return self:winterCharge(quantity);
     end
-    return  quantity * self.summerRate
+    return self:summerCharge(quantity);
 end
 
