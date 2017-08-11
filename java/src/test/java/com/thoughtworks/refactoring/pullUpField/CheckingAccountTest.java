@@ -2,15 +2,16 @@ package com.thoughtworks.refactoring.pullUpField;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 public class CheckingAccountTest {
     @Test
     public void getMinimumCheckingBalance() throws Exception {
         CheckingAccount account = new CheckingAccount();
 
-        double result = account.getMinimumCheckingBalance();
+        int result = account.getMinimumCheckingBalance();
 
-        assertEquals(result, 5);
+        assertThat(result, is(5));
     }
 }
