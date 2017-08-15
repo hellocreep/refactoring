@@ -1,5 +1,5 @@
 class SoccerTeam {
-  _data: string[] = new Array(3);
+  private _data: string[] = new Array(3);
 
   setName(name:string): void {
     this._data[0] = name;
