@@ -8,6 +8,14 @@ class SoccerTeam {
   getName(): string{
     return this._data[0];
   }
+
+  setWins(wins:string): void {
+    this._data[1] = wins; 
+  }
+
+  getWins(): string{
+    return this._data[1];
+  }
 }
 
 export default SoccerTeam;
