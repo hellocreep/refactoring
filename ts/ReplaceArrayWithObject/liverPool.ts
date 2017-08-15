@@ -6,4 +6,4 @@ row.setWins('15');
 
 export const name: string = row.getName();
 
-export const wins: number = parseInt(row.getWins());
+export const wins: number = row.getWins();

@@ -13,8 +13,8 @@ class SoccerTeam {
     this._data[1] = wins; 
   }
 
-  getWins(): string{
-    return this._data[1];
+  getWins(): number{
+    return parseInt(this._data[1]);
   }
 }
 
