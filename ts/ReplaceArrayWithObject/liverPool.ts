@@ -1,9 +1,9 @@
 import SoccerTeam from './SoccerTeam';
 
 const row: SoccerTeam = new SoccerTeam();
-row._data[0] = 'Liverpool';
+row.setName('Liverpool');
 row._data[1] = '15';
 
-export const name: string = row._data[0];
+export const name: string = row.getName();
 
 export const wins: number = parseInt(row._data[1]);
