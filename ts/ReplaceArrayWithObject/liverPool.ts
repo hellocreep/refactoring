@@ -1,8 +1,9 @@
-const row :string[] = new Array(3);
+import SoccerTeam from './SoccerTeam';
 
-row[0] = 'Liverpool';
-row[1] = '15';
+const row: SoccerTeam = new SoccerTeam();
+row._data[0] = 'Liverpool';
+row._data[1] = '15';
 
-export const name: string = row[0];
+export const name: string = row._data[0];
 
-export const wins: number = parseInt(row[1]);
+export const wins: number = parseInt(row._data[1]);
