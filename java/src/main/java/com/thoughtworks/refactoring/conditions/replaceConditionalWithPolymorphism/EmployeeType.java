@@ -18,4 +18,17 @@ public abstract class EmployeeType {
                 throw new IllegalArgumentException("Incorrect Employee Code");
         }
     }
+
+    public int payAmount(Employee employee) {
+        switch (getTypeCode()) {
+            case EmployeeType.ENGINEER:
+                return employee.monthlySalary;
+            case EmployeeType.SALESMAN:
+                return employee.monthlySalary + employee.commission;
+            case EmployeeType.MANAGER:
+                return employee.monthlySalary + employee.bonus;
+            default:
+                throw new RuntimeException("Incorrect Employee Code");
+        }
+    }
 }
