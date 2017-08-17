@@ -25,6 +25,11 @@ public class EmplyeeTest {
         Employee manager = new Employee(new Manager());
         assertThat(manager.payAmount(), is(9000));
     }
+    @Test
+    public void exception() throws Exception {
+        Employee manager = new Employee(new Manager());
+        assertThat(manager.payAmount(), is(9000));
+    }
 
 
 }
