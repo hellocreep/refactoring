@@ -1,7 +1,7 @@
 package replaceConditionalWithPolymorphism;
 
 
-public class Engineer extends EmployeeType {
+public class EngineerType extends EmployeeType {
     @Override public int getTypeCode() {
         return EmployeeType.ENGINEER;
     }
