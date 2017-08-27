@@ -6,6 +6,4 @@ package com.thoughtworks.refactoring.introduceNullObject
 open class Customer(_customeName: String, _plan: BillingPlan){
     val customeName = _customeName
     val plan = _plan
-
-    open fun isNull(): Boolean = false
 }

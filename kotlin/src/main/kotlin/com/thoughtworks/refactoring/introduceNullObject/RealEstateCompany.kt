@@ -5,13 +5,11 @@ package com.thoughtworks.refactoring.introduceNullObject
  */
 
 fun getCustomerName(site: Site): String {
-    val customer = site.customer
 
-    return if (customer.isNull()) "occupant" else customer.customeName
+    return site.customer.customeName
 }
 
 fun getCustomerBillingPlan(site: Site): BillingPlan {
-    val customer = site.customer
 
-    return if (customer.isNull()) BillingPlan.basic() else customer.plan
+    return site.customer.plan
 }

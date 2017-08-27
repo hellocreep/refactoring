@@ -19,7 +19,7 @@ class RealEstateCompanyKtTest : StringSpec() {
         }
 
         "should get default customer name and basic billing plan when no customer in site" {
-            val site = Site(NullCustomer())
+            val site = Site()
 
             getCustomerName(site) shouldBe "occupant"
             getCustomerBillingPlan(site) shouldEqual BillingPlan("basic")
