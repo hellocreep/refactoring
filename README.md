@@ -60,7 +60,7 @@
 * [ ] Consolidate Duplicate Conditional Fragments
 * [x] Decompose Conditional
 * [ ] Introduce Assertion
-* [ ] Introduce Null Object
+* [x] Introduce Null Object
 * [ ] Recompose Conditional
 * [x] Remove Control Flag
 * [ ] Replace Conditional with Polymorphism
