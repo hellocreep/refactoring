@@ -5,8 +5,8 @@ public class Manager extends Employee {
 
     Manager(String name, String id, int grade) {
         _name = name;
-        _grade = grade;
         _id = id;
+        _grade = grade;
     }
 
     public String description() {
