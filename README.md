@@ -100,7 +100,7 @@
 * [ ] Extract Superclass
 * [ ] Form Template Method
 * [ ] Introduce Null Object
-* [ ] Pull Up Constructor Body
+* [x] Pull Up Constructor Body
 * [x] Pull Up Field
 * [x] Pull Up Method
 * [ ] Push Down Field
