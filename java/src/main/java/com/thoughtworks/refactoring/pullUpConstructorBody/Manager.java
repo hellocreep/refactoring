@@ -3,9 +3,8 @@ package com.thoughtworks.refactoring.pullUpConstructorBody;
 public class Manager extends Employee {
     private int _grade;
 
-    Manager(String name, String id, int grade) {
-        _name = name;
-        _id = id;
+   protected Manager(String name, String id, int grade) {
+        super(name, id);
         _grade = grade;
     }
 

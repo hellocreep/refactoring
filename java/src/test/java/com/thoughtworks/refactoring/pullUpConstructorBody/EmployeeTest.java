@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 public class EmployeeTest {
     @Test
     public void descriptionOfEmployee() throws Exception {
-        Employee employee = new Employee();
+        Employee employee = new Employee("employee", "a");
 
         assertEquals(employee.description(), "name: employee, id: a");
     }
