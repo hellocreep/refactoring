@@ -7,15 +7,7 @@ public class IPhone extends Phone {
         super(base, tax);
     }
 
-    public double getTotalAmount() {
-        return getBase() + getTaxAmount();
-    }
-
-    private double getBase() {
-        return this.base;
-    }
-
-    private double getTaxAmount() {
+    protected double getTaxAmount() {
         return this.base * (this.tax + ADDITION_RATE);
     }
 }

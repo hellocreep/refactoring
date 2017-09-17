@@ -8,4 +8,16 @@ public class Phone {
         this.base = base;
         this.tax = tax;
     }
+
+    public double getTotalAmount() {
+        return getBase() + getTaxAmount();
+    }
+
+    protected double getBase() {
+        return this.base;
+    }
+
+    protected double getTaxAmount() {
+        return this.base * this.tax;
+    }
 }
