@@ -8,6 +8,6 @@ public class IPhone extends Phone {
     }
 
     protected double getTaxAmount() {
-        return this.base * (this.tax + ADDITION_RATE);
+        return this.getBase() * (this.getTaxAmount() + ADDITION_RATE);
     }
 }

@@ -8,6 +8,6 @@ public class HWPhone extends Phone{
     }
 
     protected double getTaxAmount() {
-        return this.base * (this.tax - DISCOUNT_RATE);
+        return this.getBase() * (this.getTaxAmount() - DISCOUNT_RATE);
     }
 }
