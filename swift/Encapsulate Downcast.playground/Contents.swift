@@ -30,13 +30,12 @@ final class Truck: Car {
 }
 
 class CarManager {
-    var cars = Array(0 ..< 10).map { Truck(id: $0) }
+    var trucks = Array(0 ..< 10).map { Truck(id: $0) }
     
-    func getLastElement() -> Car {
-        return cars.last!
+    func getLastTruck() -> Truck {
+        return trucks.last!
     }
 }
 
-
-let lastTruck: Truck = CarManager().getLastElement() as! Truck
-lastTruck.isType(type: Car.self)
+let lastTruck: Truck = CarManager().getLastTruck()
+lastTruck.isType(type: Truck.self)
