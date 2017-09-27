@@ -1,23 +1,20 @@
 from .replace_loop_with_collection_closure_method import getManagers
 
+
+class Employee:
+    def __init__(self, name, manager=False):
+        self.name = name
+        self.manager = manager
+
+
+manager = Employee('Rick', True)
+dev = Employee('Morty')
 employees = [
-    {
-        "role": "manager",
-        "age": 50,
-        "id": 123
-    },
-    {
-        "role": "dev",
-        "age": 30,
-        "id": 3232
-    }
+    manager,
+    dev
 ]
 
 
 class TestGetManagers:
     def test_get_managers(self):
-        assert getManagers(employees) == [{
-            "role": "manager",
-            "age": 50,
-            "id": 123
-        }]
+        assert getManagers(employees) == [manager]
