@@ -1,5 +1,4 @@
 # Refactoring
-====
 
 ### Composing Methods(composing methods)
 
@@ -13,7 +12,7 @@
 * [x] Inline Temp
 * [x] Move Eval from Runtime to Parse Time
 * [x] Remove Assignments to Parameters
-* [ ] Replace Loop with Collection Closure Method
+* [x] Replace Loop with Collection Closure Method
 * [x] Replace Method with Method Object
 * [x] Replace Temp with Chain
 * [x] Replace Temp with Query
@@ -23,7 +22,6 @@
 ### Moving Features Between Objects(moving features)
 
 * [x] Extract Class
-* [ ] Extract Module
 * [x] Hide Delegate
 * [x] Inline Class
 * [ ] Inline Module
@@ -48,29 +46,23 @@
 * [x] Replace Data Value with Object
 * [x] Replace Magic Number with Symbolic Constant
 * [ ] Replace Record with Data Class
-* [ ] Replace Subclass with Fields
 * [ ] Replace Type Code with Class
 * [ ] Replace Type Code with State/Strategy
-* [ ] Replace Type Code with Subclasses
 * [ ] Self Encapsulate Field
 
 ### Simplifying Conditional Expressions(conditionals)
 
-* [ ] Consolidate Conditional Expression
-* [ ] Consolidate Duplicate Conditional Fragments
+* [x] Consolidate Duplicate Conditional Fragments
 * [x] Decompose Conditional
 * [ ] Introduce Assertion
 * [x] Introduce Null Object
 * [ ] Recompose Conditional
 * [x] Remove Control Flag
-* [ ] Replace Conditional with Polymorphism
-* [ ] Replace Exception with Test
 * [x] Replace Nested Conditional with Guard Clauses
 
 ### Making Method Calls Simpler(method calls)
 
 * [x] Add Parameter
-* [ ] Encapsulate Downcast
 * [ ] Hide Method
 * [ ] Introduce Expression Builder
 * [ ] Introduce Gateway
@@ -78,7 +70,6 @@
 * [x] Introduce Parameter Object
 * [x] Parameterize Method
 * [ ] Preserve Whole Object
-* [ ] Remove Control Flag
 * [x] Remove Named Parameter
 * [x] Remove Parameter
 * [x] Remove Setting Method
@@ -98,8 +89,8 @@
 * [ ] Extract Module
 * [ ] Extract Subclass
 * [ ] Extract Superclass
-* [ ] Form Template Method
-* [ ] Introduce Null Object
+* [x] Form Template Method
+* [x] Introduce Null Object
 * [x] Pull Up Constructor Body
 * [x] Pull Up Field
 * [x] Pull Up Method
