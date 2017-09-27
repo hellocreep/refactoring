@@ -1,6 +1,3 @@
 def getManagers(employees):
-    managers = []
-    for e in employees:
-        if e.get("role") == "manager":
-            managers.append(e)
-    return managers
+    return [e for e in employees if e.get("role") == "manager"]
+    # return list(filter(lambda e: e.get("role") == "manager", employees))
