@@ -84,7 +84,7 @@
 ### Dealing with Generalization(inheritance)
 
 * [ ] Collapse Hierarchy
-* [ ] Encapsulate Downcast
+* [x] Encapsulate Downcast
 * [x] Extract Interface
 * [ ] Extract Module
 * [ ] Extract Subclass
